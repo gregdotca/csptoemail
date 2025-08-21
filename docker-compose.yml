@@ -1,0 +1,15 @@
+services:
+  csp2email:
+    image: csptoemail/csptoemail:latest
+    container_name: csp_to_email
+    ports:
+      - "5000:5000"
+    restart: unless-stopped
+    environment:
+      - CSP2E_SERVER=mail.example.com
+      - CSP2E_PROTOCOL=tls
+      - CSP2E_PORT=587
+      - CSP2E_USERNAME=user
+      - CSP2E_PASSWORD=pass
+      - CSP2E_SENDER=sender@example.com
+      - CSP2E_RECEIVER=receiver@example.com
