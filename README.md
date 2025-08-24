@@ -1,7 +1,7 @@
-CSP To Email
+CSP to Email
 ------------
 
-## What is CSP TO Email?
+## What is CSP to Email?
 
 A simple web application that allows you to send Content Security Policy (CSP) reports to an email address. It is designed to be easy to set up and use, with minimal configuration required. There's no UI or reporting, just an endpoint that will take your CSP Reports and emails them to you as they come in.
 
@@ -12,11 +12,11 @@ A simple web application that allows you to send Content Security Policy (CSP) r
 - Copy the below contents into a docker-compose.yml file (or just copy the existing docker-compose.yml file)
 - Update the environment variables with your details
 - Run docker compose up -d (or docker-compose up -d)
-- CSP To Email will now be running on http://localhost:5000
+- CSP to Email will now be running on http://localhost:5000
 
 ````
 services:
-  csp2email:
+  csptoemail:
     image: csptoemail/csptoemail:latest
     container_name: csp_to_email
     ports:

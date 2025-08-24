@@ -9,7 +9,7 @@ load_dotenv()
 
 
 class Config:
-    SOFTWARE_NAME = "CSP To Email"
+    SOFTWARE_NAME = "CSP to Email"
     EMAIL_SUBJECT = "CSP Report Received"
     EMAIL_SERVER = os.environ.get("CSP2E_SERVER")
     EMAIL_PROTOCOL = os.environ.get("CSP2E_PROTOCOL", "tls")

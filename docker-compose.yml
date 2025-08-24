@@ -1,5 +1,5 @@
 services:
-  csp2email:
+  csptoemail:
     image: csptoemail/csptoemail:latest
     container_name: csp_to_email
     ports:
